@@ -43,5 +43,16 @@ On first load the robot will nto be visible. To be able to use the robot model w
 
 For some simulations like the [SRCSIM](https://bitbucket.org/osrf/srcsim) you need to set the `Fixed Frame` to `pelvis`. If the project your working on is setup correctly there shouldn't be a problem initalizing RVIZ to the simulation running in the background.
 
-![rviz-setup](img/rviz-setup.png)
+![rviz-setup](img/rviz-setup.png =410x)
+
+The fixed frame options gives you the ability to create a `center` for the robot to be based around. This means that anything you link to the simulation can be visualized through this connection. There is a dropdown with all the availible `msg` that can be associated with the robot simulation. Usually the `pelvis` is a good place to start unless you are specifically wanting to explore simulated relations to other parts of the robot. 
+
+##Seeing the Robot Model
+
+If this is your first time running your robot simulation within RVIZ you may need to add the `robot model` as a facet of the RVIZ enviroment.
+
+At the bottom of the RVIZ screen in the left hand corner, there is an `Add` button. Click this button, a dialog will open that lists the items that can be added to the RVIZ enviroment. Select the `robot model`
+
+![adding-robot-model](img/add-robot-model.png =410x)
+
 
