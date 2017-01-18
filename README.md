@@ -55,4 +55,11 @@ At the bottom of the RVIZ screen in the left hand corner, there is an `Add` butt
 
 ![adding-robot-model](img/add-robot-model.png)
 
+Just like the other features in RVIZ you will have to set the topic you are wanting to link to. In most cases you will want to set this to `pelvis` just like the fixed frame from above.
+
+##PointCloud2
+The point cloud 2 is a tool to visualize what the robot sensors are seeing.
+
+Just like the robot model, to use this feature you will need to add the module within the RVIZ enviroment and select the topic you want to add.
+
 
