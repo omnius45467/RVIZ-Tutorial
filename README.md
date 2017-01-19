@@ -43,7 +43,7 @@ On first load the robot will nto be visible. To be able to use the robot model w
 
 For some simulations like the [SRCSIM](https://bitbucket.org/osrf/srcsim) you need to set the `Fixed Frame` to `pelvis`. If the project your working on is setup correctly there shouldn't be a problem initalizing RVIZ to the simulation running in the background.
 
-![rviz-setup](img/rviz-setup.png)
+![rviz-setup](img/rviz-fixed-frame.png)
 
 The fixed frame options gives you the ability to create a `center` for the robot to be based around. This means that anything you link to the simulation can be visualized through this connection. There is a dropdown with all the availible `msg` that can be associated with the robot simulation. Usually the `pelvis` is a good place to start unless you are specifically wanting to explore simulated relations to other parts of the robot. 
 
@@ -58,8 +58,14 @@ At the bottom of the RVIZ screen in the left hand corner, there is an `Add` butt
 Just like the other features in RVIZ you will have to set the topic you are wanting to link to. In most cases you will want to set this to `pelvis` just like the fixed frame from above.
 
 ##PointCloud2
-The point cloud 2 is a tool to visualize what the robot sensors are seeing.
+The point cloud 2 is a tool to visualize what the simulation is picking up. It is based on the specific `multisense` topics(usually, at least in the case of the SRCSIM mentioned above). This is using the simulations stereosocpic vision.
 
 Just like the robot model, to use this feature you will need to add the module within the RVIZ enviroment and select the topic you want to add.
+![rviz-point-cloud-2-select](img/rviz-point-cloud-2-setup.png)
+![rviz-point-cloud-2](img/rviz-point-cloud-2.png)
 
+There is something that is availible listed as PointCloud this seems to be related to a specific channel from the `multisense` topic list. To access these you must type in the full path to what you want to view. This package seems surpased by the PointCloud2 package.
 
+##Lidar Scan
+
+In the `multisense` set of topics there is a package titled `LidarScan` just like the items mentioned above these tool can be visualized sensor input from the robot. Add the item in this case we will be adding `Laser Scan` from out prebuilt menu and select `/multisense/lidar_scan` as the topic. 
