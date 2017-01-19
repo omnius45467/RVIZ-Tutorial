@@ -69,3 +69,11 @@ There is something that is availible listed as PointCloud this seems to be relat
 ##Lidar Scan
 
 In the `multisense` set of topics there is a package titled `LidarScan` just like the items mentioned above these tool can be visualized sensor input from the robot. Add the item in this case we will be adding `Laser Scan` from out prebuilt menu and select `/multisense/lidar_scan` as the topic. 
+
+![rviz-laser-scan](img/rviz-laser-setup)
+
+You also have the abilty to 'modulate' the settings of the laser. To find out about all of them check out tree directory for different options. 
+
+![rviz-laser-min](img/rviz-laser-min.png)
+
+
